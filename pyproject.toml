@@ -1,0 +1,35 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "getodds"
+version = "0.5.0"
+description = "Python client for the GetOdds sports odds API: DraftKings, FanDuel and BetRivers prices plus PrizePicks, Underdog and Pick6 lines"
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.10"
+authors = [{name = "Stunning Couches LLC", email = "ops@getoddsapi.com"}]
+keywords = ["sports odds api", "odds api", "draftkings", "fanduel", "betrivers", "prizepicks", "underdog", "sports betting", "player props"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+  "Intended Audience :: Developers",
+  "Topic :: Software Development :: Libraries",
+]
+dependencies = []
+
+[project.urls]
+Repository = "https://github.com/getoddsapi/getodds-python"
+Issues = "https://github.com/getoddsapi/getodds-python/issues"
+Homepage = "https://getoddsapi.com"
+Documentation = "https://getoddsapi.com/docs"
+Quickstart = "https://getoddsapi.com/quickstart"
+OpenAPI = "https://getoddsapi.com/openapi.json"
+
+[project.scripts]
+getodds = "getodds.__main__:main"
+
+[tool.setuptools]
+packages = ["getodds"]
