@@ -1,6 +1,12 @@
-# getodds (Python)
+# Sports odds API for Python: getodds
 
-Python client for the [GetOdds sports odds API](https://getoddsapi.com): DraftKings, FanDuel and BetRivers
+A sports odds API for Python. `pip install getodds` and read DraftKings, FanDuel and BetRivers odds plus PrizePicks, Underdog and Pick6 lines in one schema, with the capture time on every row. Public boards work with no key.
+
+[Website](https://getoddsapi.com/?utm_source=github&utm_medium=readme&utm_campaign=getodds-python) | [Docs](https://getoddsapi.com/docs?utm_source=github&utm_medium=readme&utm_campaign=getodds-python) | [Free API key](https://getoddsapi.com/sign-up?utm_source=github&utm_medium=readme&utm_campaign=getodds-python) | [Pricing](https://getoddsapi.com/pricing?utm_source=github&utm_medium=readme&utm_campaign=getodds-python) | [All SDKs](https://getoddsapi.com/sdks?utm_source=github&utm_medium=readme&utm_campaign=getodds-python)
+
+Also for getoddsapi.com: [JavaScript: `npm install getoddsapi`](https://github.com/getoddsapi/getodds-js) | [MCP server: `npx -y getodds-mcp`](https://github.com/getoddsapi/getodds-mcp)
+
+Python client for the [GetOdds sports odds API](https://getoddsapi.com/?utm_source=github&utm_medium=readme&utm_campaign=getodds-python): DraftKings, FanDuel and BetRivers
 sportsbook prices plus PrizePicks, Underdog and DraftKings Pick6 pick'em lines, with capture times on every row.
 No dependencies (standard library only), Python 3.10+.
 
@@ -32,7 +38,7 @@ Prices move; your numbers will differ. From the shell: `getodds board --sport nb
 
 ## With a free key
 
-Create a free key at <https://getoddsapi.com/sign-up> (1,000 requests a UTC day, 60 a minute, no card) and set it in
+Create a free key at <https://getoddsapi.com/sign-up?utm_source=github&utm_medium=readme&utm_campaign=getodds-python> (1,000 requests a UTC day, 60 a minute, no card) and set it in
 the server environment:
 
 ```sh
@@ -71,7 +77,7 @@ A successful data request uses one credit; failed reads use none.
 | `markets(source=...)` | PrizePicks, Underdog, DraftKings Pick6 thresholds |
 | `fanduel_markets`, `outrights`, `outright_odds`, `live_events` | FanDuel native markets |
 
-Full reference: <https://getoddsapi.com/docs> and the OpenAPI spec at <https://getoddsapi.com/openapi.json>.
+Full reference: <https://getoddsapi.com/docs?utm_source=github&utm_medium=readme&utm_campaign=getodds-python> and the OpenAPI spec at <https://getoddsapi.com/openapi.json>.
 
 ## Tests
 
